@@ -3,7 +3,7 @@ extends /layout/default
 block beforehtml
   -
     title = '分享 LINE 數位版名片'
-    description = '請開啟本連結並按一下「選擇分享對象」來透過 LINE 分享名片'
+    description = '請開啟本連結並按一下「分享好友」來分享給好友或群組。'
 
 block style
   meta(property="og:image:height", content="630")
@@ -109,11 +109,12 @@ block script
           try {
             const tpl = this.paramBase64url('template')
             if (!tpl) throw new Error('template is required.')
-            this.render = _.template(_.get(await axios.get(tpl, {
-              params: { cachebust: +new Date() },
+            const render = _.template(_.get(await axios.get(tpl, {
+              params: { cachebust: Date.now() },
               transformResponse: [],
             }), 'data'))
-            if (!_.isFunction(this.render)) throw new Error('')
+            if (!_.isFunction(render)) throw new Error('')
+            this.render = options => render({ _, dayjs, Qs, liffLink: this.liffLink, ...options })
             window.gtagTiming('after getTpl')
           } catch (err) {
             err.message = `${this.$t('init.getTplFail')}${err.message ? ': ' + err.message : ''}`
@@ -136,10 +137,10 @@ block script
             this.showLoading(this.$t('wait'), this.$t('share.loading'))
             window.gtagEvent('瀏覽分享名片網頁', 'btnShare', this.vcard.template)
             if (!liff.isApiAvailable('shareTargetPicker')) throw new Error(this.$t('share.unsupported'))
-            const beforeShare = new Date()
+            const beforeShare = Date.now()
             const res = await liff.shareTargetPicker(this.msgs)
             if (_.get(res, 'status') !== 'success') throw new Error(this.$t('share.canceled'))
-            const afterShare = new Date()
+            const afterShare = Date.now()
             await Swal.fire({ icon: 'success', title: this.$t('share.success') })
             if (afterShare - beforeShare > 1e3) liff.closeWindow()
           } catch (err) {
@@ -186,14 +187,7 @@ block script
           })
         },
         getRenderedMsgs () {
-          let msg = this.render({
-            _,
-            CryptoJS,
-            dayjs,
-            liffLink: this.liffLink,
-            Qs,
-            vcard: this.vcard,
-          })
+          let msg = this.render({ vcard: this.vcard })
           console.log(msg)
           msg = JSON5.parse(msg)
           if (_.includes(['bubble', 'carousel'], _.get(msg, 'type'))) {
