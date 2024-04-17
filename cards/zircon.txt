@@ -1,0 +1,312 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://i.imgur.com/1jE2E4Y.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "鋯京室內裝修工程有限公司",
+            "wrap": true,
+            "weight": "bold",
+            "size": "lg",
+            "color": "#545454"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "電話：02-2577-0655",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "傳真：02-2577-0656",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "地址：台北市萬華區桂林路242巷68弄13號",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "● 室內設計",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "xxl",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "● 景觀設計",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "● 外牆整新",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "● 商標設計",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "action": {
+              "type": "uri",
+              "label": "Website",
+              "uri": "http://www.zircondesign.com.tw/web/bbs/board.php?bo_table=page&wr_id=3"
+            },
+            "color": "#C4BCB7",
+            "height": "sm"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Facebook",
+              "uri": "https://www.facebook.com/ZirconDesign/"
+            },
+            "color": "#C4BCB7",
+            "style": "primary",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://imgur.com/pxp3JAA.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Zircon Design",
+            "wrap": true,
+            "weight": "bold",
+            "size": "lg",
+            "color": "#545454"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "TEL：02-2577-0655",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "FAX：02-2577-0656",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "● Interior design",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "xxl",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "● Landscape design",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "● Exterior wall renovation",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              },
+              {
+                "type": "text",
+                "text": "● Logo design",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "action": {
+              "type": "uri",
+              "label": "Map",
+              "uri": "https://goo.gl/maps/fqYzgNyXAmeZVUtn8"
+            },
+            "color": "#8696A7",
+            "height": "sm"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Share",
+              "uri": "https://liff.line.me/1656199846-wOdQD4YP"
+            },
+            "color": "#8696A7",
+            "style": "primary",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://i.imgur.com/1QDUfQu.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "薛人睿 Ray",
+            "wrap": true,
+            "weight": "bold",
+            "size": "lg",
+            "color": "#545454"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "0939099888",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "margin": "md",
+                "color": "#7A7A7A"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Line",
+              "uri": "https://line.me/ti/p/3E8P4WwaqF"
+            },
+            "color": "#93A8AC",
+            "style": "primary",
+            "height": "sm"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Facebook",
+              "uri": "https://www.facebook.com/profile.php?id=100005888677857"
+            },
+            "color": "#93A8AC",
+            "style": "primary",
+            "height": "sm"
+          }
+        ]
+      }
+    }
+  ]
+}
+
